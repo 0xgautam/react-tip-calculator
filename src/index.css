@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.box {
+  @apply h-12
+		rounded
+    font-bold;
+}
+
+.box-custom {
+  @apply text-dark-grayish-cyan-1 h-12 font-black bg-white;
+}
