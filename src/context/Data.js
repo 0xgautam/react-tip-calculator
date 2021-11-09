@@ -36,7 +36,7 @@ export function DataProvider({ children }) {
   useEffect(() => {
     if (bill && tipPercent && peopleNum) {
       const tipPerPerson = (bill * (tipPercent / 100)) / peopleNum;
-      const totalBill = +bill + +(tipPerPerson * peopleNum);
+      const totalBill = (+bill + +(tipPerPerson * peopleNum)) / peopleNum;
       setTip(tipPerPerson);
       setTotal(totalBill);
     }
